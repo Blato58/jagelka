@@ -357,8 +357,11 @@ p {
 
 .identity-card,
 .cards article,
+.evidence-grid article,
 .impact-grid div,
+.limits-grid article,
 .action-grid article,
+.checklist-grid article,
 .source-list article {
   background: var(--panel);
   border: 1px solid var(--line);
@@ -375,8 +378,11 @@ p {
 
 .identity-card li,
 .cards p,
+.evidence-grid p,
 .impact-grid p,
+.limits-grid p,
 .action-grid p,
+.checklist-grid p,
 .source-list p,
 .timeline p {
   color: var(--muted);
@@ -387,12 +393,41 @@ p {
 }
 
 .cards,
+.evidence-grid,
 .impact-grid,
+.limits-grid,
 .action-grid,
+.checklist-grid,
 .source-list {
   display: grid;
   gap: 16px;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.official-section {
+  background: #fff;
+  max-width: none;
+  padding-left: max(24px, calc((100vw - 1200px) / 2 + 24px));
+  padding-right: max(24px, calc((100vw - 1200px) / 2 + 24px));
+}
+
+.evidence-grid a {
+  display: inline-flex;
+  margin-top: 14px;
+}
+
+.proof-limits {
+  background: #fff7f7;
+  max-width: none;
+  padding-left: max(24px, calc((100vw - 1200px) / 2 + 24px));
+  padding-right: max(24px, calc((100vw - 1200px) / 2 + 24px));
+}
+
+.checklist {
+  background: #fff;
+  max-width: none;
+  padding-left: max(24px, calc((100vw - 1200px) / 2 + 24px));
+  padding-right: max(24px, calc((100vw - 1200px) / 2 + 24px));
 }
 
 .flow {
@@ -661,8 +696,11 @@ p {
   .fb-callout,
   .split,
   .cards,
+  .evidence-grid,
   .impact-grid,
+  .limits-grid,
   .action-grid,
+  .checklist-grid,
   .source-list,
   .flow {
     grid-template-columns: 1fr;

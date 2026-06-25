@@ -13,6 +13,7 @@
       <a class="brand" href="#top">VAROVÁNÍ</a>
       <div class="nav-links">
         <a href="#who">Kdo to je</a>
+        <a href="#official">Úřední fakta</a>
         <a href="#patterns">Jak to funguje</a>
         <a href="#warrant">Zatykač</a>
         <a href="#timeline">Timeline</a>
@@ -28,12 +29,14 @@
         <h1 id="hero-title">František Jagelka</h1>
         <p class="hero-lead">
           Poškození popisují falešné platby, prodej lístků bez skutečné úhrady,
-          sliby práce v zahraničí, práci s aliasy a stopy k pátrání / zatykači.
+          sliby práce v zahraničí, práci s aliasy, úředně doložené civilní
+          exekuční publikace a historické stopy k pátrání / zatykači.
         </p>
         <div class="risk-strip" aria-label="Hlavní rizika">
           <span>falešné screenshoty plateb</span>
           <span>lístky a marketplace</span>
           <span>úvěry a osobní údaje</span>
+          <span>civilní exekuce</span>
           <span>pátrací / zatykačové stopy</span>
         </div>
         <div class="hero-actions">
@@ -61,6 +64,10 @@
           Tato stránka slouží jako prevence. Neslouží k fyzické konfrontaci,
           doxxingu ani nátlaku. Pokud jsi poškozený, ukládej důkazy a řeš věc
           přes banku, platformu a policii.
+        </p>
+        <p>
+          Ve veřejné rešerši nebyl dohledán pravomocný trestní rozsudek za
+          podvod. Úřední civilní exekuce samy o sobě neprokazují trestný čin.
         </p>
       </div>
       <div class="source-key" aria-label="Typy zdrojů">
@@ -114,6 +121,49 @@
       </div>
     </section>
 
+    <section class="section official-section" id="official" aria-labelledby="official-title">
+      <div class="section-heading">
+        <p class="eyebrow">Úředně doložené</p>
+        <h2 id="official-title">Civilní exekuční publikace ve veřejných zdrojích</h2>
+        <p>
+          OSINT report doplnil dvě úřední publikace v Obchodném vestníku SR.
+          Jde o civilní exekuční tituly, ne o trestní rozsudek ani důkaz podvodu.
+        </p>
+      </div>
+
+      <div class="evidence-grid">
+        <article>
+          <span class="badge official">Obchodný vestník 134/2020</span>
+          <h3>406EX 228/20</h3>
+          <p>
+            Publikace z 14.07.2020 uvádí vykonatelný platební rozkaz
+            31Up/1441/2019 ze dne 11.11.2019 a jistinu
+            <strong>70,70 EUR plus příslušenství</strong>.
+          </p>
+          <a href="https://obchodnyvestnik.justice.gov.sk/ObchodnyVestnik/Formular/FormularDetail.aspx?IdFormular=2614961" target="_blank" rel="noopener noreferrer">Otevřít úřední záznam</a>
+        </article>
+        <article>
+          <span class="badge official">Obchodný vestník 161/2025</span>
+          <h3>406EX 358/25</h3>
+          <p>
+            Publikace z 21.08.2025 uvádí vykonatelný platební rozkaz
+            15Csp/23/2024-50 ze dne 14.02.2025 a jistinu
+            <strong>1 762,40 EUR plus příslušenství</strong>.
+          </p>
+          <a href="https://obchodnyvestnik.justice.gov.sk/ObchodnyVestnik/Formular/FormularDetail.aspx?IdFormular=4467093" target="_blank" rel="noopener noreferrer">Otevřít úřední záznam</a>
+        </article>
+        <article>
+          <span class="badge caveat">publikační opatrnost</span>
+          <h3>Co to znamená a co ne</h3>
+          <p>
+            Součet publikovaných jistin je <strong>1 833,10 EUR</strong>, bez
+            příslušenství, nákladů, úhrad a změn po publikaci. Tato částka není
+            potvrzená škoda z podvodů ani dnešní celkový dluh.
+          </p>
+        </article>
+      </div>
+    </section>
+
     <section class="section" id="did" aria-labelledby="did-title">
       <div class="section-heading">
         <p class="eyebrow">Co lidé hlásí</p>
@@ -126,9 +176,11 @@
           <p>
             Jedna osoba popisuje prodej lístku na Beats for Love: po údajném
             potvrzení platby lístek odeslala, peníze nepřišly a následovaly
-            výmluvy.
+            výmluvy. PodvodNaBazaru #22420 dále obsahuje červnová hlášení k
+            Rock for People a komentáře s tvrzenými částkami <strong>5 500 Kč</strong>
+            a <strong>8 000 Kč</strong>; nejde o úředně potvrzenou škodu.
           </p>
-          <p class="source-line"><a class="badge archive" href="archive.html#m77">archiv: prodej lístku</a></p>
+          <p class="source-line"><a class="badge archive" href="archive.html#m77">archiv: prodej lístku</a> <span class="badge public">PodvodNaBazaru #22420</span></p>
         </article>
         <article>
           <h3>Falešná nebo sporná potvrzení platby</h3>
@@ -158,7 +210,8 @@
           <h3>Exekuce a dluhové stopy</h3>
           <p>
             Archiv odkazuje na ověřování přes veřejné portály a zmiňuje exekuce.
-            Samostatně existuje veřejná stopa v Obchodném vestníku SR.
+            Samostatně existují dvě úřední publikace v Obchodném vestníku SR
+            z let 2020 a 2025.
           </p>
           <p class="source-line"><span class="badge official">Obchodný vestník SR</span> <a class="badge archive" href="archive.html#m21">archiv: exekuce</a> <a class="badge archive" href="archive.html#m86">archiv: ověřování</a> <a class="badge archive" href="archive.html#m1110">archiv: portál</a></p>
         </article>
@@ -243,6 +296,11 @@
           Živý úřední záznam k evropskému zatykači nebyl při poslední kontrole
           dohledán, proto je tvrzení uvedené jako zdrojově kvalifikované.
         </p>
+        <p>
+          Podle právního vysvětlení Slov-Lex je příkaz k zatčení procesní
+          nástroj k zajištění účasti obviněného v trestním řízení; ani autentický
+          příkaz by sám o sobě nebyl pravomocným odsouzením.
+        </p>
         <p class="source-line">
           <span class="badge official">Patranie.sk stopa</span>
           <a class="badge archive" href="archive.html#m1252">archiv: screenshot pátrání</a>
@@ -259,25 +317,61 @@
       </figure>
     </section>
 
+    <section class="section proof-limits" aria-labelledby="limits-title">
+      <div class="section-heading">
+        <p class="eyebrow">Co není prokázáno</p>
+        <h2 id="limits-title">Rozlišuj fakta, tvrzení a vyšetřovací stopy</h2>
+      </div>
+      <div class="limits-grid">
+        <article>
+          <h3>Nebyl dohledán pravomocný rozsudek za podvod</h3>
+          <p>
+            Ve veřejně vyhledaných zdrojích k 25.06.2026 nebyl nalezen
+            pravomocný trestní rozsudek, který by bezpečně odsuzoval tuto osobu
+            za podvod. To nevylučuje neveřejné nebo probíhající řízení.
+          </p>
+        </article>
+        <article>
+          <h3>Aktuální hledanost není potvrzená</h3>
+          <p>
+            Historická stopa příkazu k zatčení je důležitá, ale živý aktuální
+            stav má ověřovat policie. Informace o hledané osobě patří na linku
+            158 nebo nejbližší útvar PZ, ne do osobní konfrontace.
+          </p>
+        </article>
+        <article>
+          <h3>U účtů a profilů hrozí záměna</h3>
+          <p>
+            U internetových profilů, telefonů, e-mailů a účtů je potřeba
+            počítat s prostředníky, převzetím účtu, zneužitím identity nebo
+            chybou oznamovatele.
+          </p>
+        </article>
+      </div>
+    </section>
+
     <section class="section" id="timeline" aria-labelledby="timeline-title">
       <div class="section-heading">
         <p class="eyebrow">Timeline</p>
         <h2 id="timeline-title">Časová osa dostupných stop</h2>
       </div>
       <ol class="timeline">
+        <li><time datetime="2019-11-11">11.11.2019</time><p>Datum platebního rozkazu 31Up/1441/2019 později uvedeného v exekuční publikaci. <a href="https://obchodnyvestnik.justice.gov.sk/ObchodnyVestnik/Formular/FormularDetail.aspx?IdFormular=2614961" target="_blank" rel="noopener noreferrer">úřední záznam</a></p></li>
+        <li><time datetime="2020-07-14">14.07.2020</time><p>Zveřejnění exekučního oznámení 406EX 228/20 v Obchodném vestníku SR; jistina 70,70 EUR plus příslušenství. <a href="https://obchodnyvestnik.justice.gov.sk/ObchodnyVestnik/Formular/FormularDetail.aspx?IdFormular=2614961" target="_blank" rel="noopener noreferrer">úřední záznam</a></p></li>
         <li><time datetime="2024-12-17">17.12.2024</time><p>První upozornění na jména/aliasy Fero, Martin, Ľubko; zmínky o exekucích a sporných potvrzeních platby. <a href="archive.html#m15">archiv</a> <a href="archive.html#m21">exekuce</a> <a href="archive.html#m30">platba</a> <a href="archive.html#m35">aliasy</a></p></li>
         <li><time datetime="2024-12-18">18.12.2024</time><p>Citlivé tvrzení o dopadu na blízké osoby a úvěrech; na webu zpracováno obecně bez rodinných detailů. <a href="archive.html#m47">číst v archivu</a></p></li>
+        <li><time datetime="2025-02-14">14.02.2025</time><p>Datum platebního rozkazu 15Csp/23/2024-50 později uvedeného v exekuční publikaci. <a href="https://obchodnyvestnik.justice.gov.sk/ObchodnyVestnik/Formular/FormularDetail.aspx?IdFormular=4467093" target="_blank" rel="noopener noreferrer">úřední záznam</a></p></li>
         <li><time datetime="2025-06-25">25.06.2025</time><p>Odkaz na článek Nového Času o práci v Norsku. <a href="archive.html#m50">archiv</a> <span>veřejná URL</span></p></li>
         <li><time datetime="2025-07-10">10.07.2025</time><p>Popis prodeje lístku na Beats for Love, screenshot platby a nepřijetí peněz. <a href="archive.html#m77">číst v archivu</a></p></li>
         <li><time datetime="2025-07-10">10.07.2025</time><p>Odkazy na ověřování přes portály Ministerstva spravedlnosti SR. <a href="archive.html#m86">archiv</a> <a href="archive.html#m1110">portál</a></p></li>
         <li><time datetime="2025-07-11">11.07.2025</time><p>Koordinace trestních oznámení a rady pro poškozené. <a href="archive.html#m216">poškození</a> <a href="archive.html#m231">policie</a> <a href="archive.html#m235">oznámení</a> <a href="archive.html#m245">banka</a></p></li>
         <li><time datetime="2025-07-14">14.07.2025</time><p>Řešení postupu s policií v ČR/SR. <a href="archive.html#m410">postup</a> <a href="archive.html#m579">ČR/SR</a></p></li>
         <li><time datetime="2025-07-16">16.07.2025</time><p>V archivu se objevuje fotka OP; neredigovaně není publikována. <a href="archive.html#m984">číst v archivu</a></p></li>
-        <li><time datetime="2025-08-21">21.08.2025</time><p>Screenshot pátrání uvádí „Príkaz na zatknutie § 73 TP“ a OR PZ v Dolnom Kubíne. <a href="archive.html#m1252">archiv</a> <span>Patranie.sk stopa</span></p></li>
+        <li><time datetime="2025-08-21">21.08.2025</time><p>Zveřejnění exekučního oznámení 406EX 358/25; zároveň screenshot pátrání uvádí „Príkaz na zatknutie § 73 TP“ a OR PZ v Dolnom Kubíne. <a href="https://obchodnyvestnik.justice.gov.sk/ObchodnyVestnik/Formular/FormularDetail.aspx?IdFormular=4467093" target="_blank" rel="noopener noreferrer">úřední exekuce</a> <a href="archive.html#m1252">archiv pátrání</a></p></li>
         <li><time datetime="2025-09-25">25.09.2025</time><p>Diskuze rozlišuje slovenský zatykač a mezinárodní/evropský zatykač; padá odkaz na EU vysvětlení EAW. <a href="archive.html#m1315">slovenský zatykač</a> <a href="archive.html#m1325">EAW odkaz</a></p></li>
         <li><time datetime="2025-11-03">03.11.2025</time><p>Archivované zprávy tvrdí, že se objevil evropský zatykač před zadržením; uvedeno pouze jako archivované tvrzení. <a href="archive.html#m1536">tvrzení</a> <a href="archive.html#m1543">navazující zpráva</a></p></li>
         <li><time datetime="2025-11-12">12.11.2025</time><p>Zprávy tvrdí, že zatykač už není na webu ministerstva. <a href="archive.html#m1626">ověření</a> <a href="archive.html#m1627">navazující zpráva</a></p></li>
-        <li><time datetime="2026-06-16">16.06.2026</time><p>Veřejný report na Podvod na bazaru #22420. <span>veřejný zdroj</span></p></li>
+        <li><time datetime="2026-06-16">16.06.2026</time><p>Vznik veřejného reportu PodvodNaBazaru #22420; komentáře z 17.-18.06.2026 uvádějí tvrzené částky 5 500 Kč a 8 000 Kč. <a href="https://podvodnabazaru.cz/podvod/22420" target="_blank" rel="noopener noreferrer">veřejný report</a></p></li>
         <li><time datetime="2026-06-24">24.06.2026</time><p>Poslední položka lokálního zdrojového archivu.</p></li>
       </ol>
     </section>
@@ -292,6 +386,19 @@
         <article><h3>Neposílej doklady</h3><p>Nepředávej občanku, rodné údaje, celé číslo účtu ani přístupy do banky.</p></article>
         <article><h3>Uchovej originály</h3><p>Ulož chat, profily, screenshoty, časové údaje a bankovní pohyby bez úprav.</p></article>
         <article><h3>Nahlas věc oficiálně</h3><p>Kontaktuj banku, platformu a policii. Pokud jde o úvěr, řeš i úvěrové registry.</p></article>
+      </div>
+    </section>
+
+    <section class="section checklist" aria-labelledby="checklist-title">
+      <div class="section-heading">
+        <p class="eyebrow">Co přiložit policii / bance</p>
+        <h2 id="checklist-title">Důkazy musí být úplné, ne jen screenshot vytržený z kontextu</h2>
+      </div>
+      <div class="checklist-grid">
+        <article><h3>Bankovní podklady</h3><p>Výpis, čas transakce, částka, účet příjemce, transakční ID, zpráva pro příjemce a komunikace s bankou.</p></article>
+        <article><h3>Komunikace a profil</h3><p>Úplný export konverzace, URL profilu, uživatelské jméno, časové údaje a původní e-maily včetně hlaviček.</p></article>
+        <article><h3>Inzerát / vstupenka</h3><p>URL inzerátu, ID účtu, původní PDF vstupenky, objednávka, potvrzení pořadatele a stav QR/barcode bez veřejného zveřejnění.</p></article>
+        <article><h3>Integrita souborů</h3><p>U důkazních souborů ulož originál, pracovní kopii, datum získání a SHA-256 hash.</p></article>
       </div>
     </section>
 
@@ -316,14 +423,20 @@
         <article>
           <span class="badge public">veřejný zdroj</span>
           <h3>Podvod na bazaru #22420</h3>
-          <p>Veřejný report uvedený v <code>sources.txt</code>.</p>
+          <p>Veřejný report z 16.06.2026 s komentáři o transakcích se vstupenkami a tvrzenými částkami.</p>
           <a href="https://podvodnabazaru.cz/podvod/22420" target="_blank" rel="noopener noreferrer">Otevřít report</a>
         </article>
         <article>
           <span class="badge official">úřední stopa</span>
-          <h3>Obchodný vestník SR</h3>
-          <p>Veřejný záznam; osobní údaje ze záznamu nejsou na této stránce opisovány.</p>
-          <a href="https://obchodnyvestnik.justice.gov.sk/ObchodnyVestnik/Formular/FormularDetailHtml.aspx?IdFormular=2614961" target="_blank" rel="noopener noreferrer">Otevřít záznam</a>
+          <h3>Obchodný vestník SR: 2020</h3>
+          <p>Exekuční oznámení 406EX 228/20, publikace z 14.07.2020.</p>
+          <a href="https://obchodnyvestnik.justice.gov.sk/ObchodnyVestnik/Formular/FormularDetail.aspx?IdFormular=2614961" target="_blank" rel="noopener noreferrer">Otevřít záznam 2020</a>
+        </article>
+        <article>
+          <span class="badge official">úřední stopa</span>
+          <h3>Obchodný vestník SR: 2025</h3>
+          <p>Exekuční oznámení 406EX 358/25, publikace z 21.08.2025.</p>
+          <a href="https://obchodnyvestnik.justice.gov.sk/ObchodnyVestnik/Formular/FormularDetail.aspx?IdFormular=4467093" target="_blank" rel="noopener noreferrer">Otevřít záznam 2025</a>
         </article>
         <article>
           <span class="badge public">mediální stopa</span>
@@ -337,6 +450,16 @@
           <p>Stopa k pátrání a obecné vysvětlení evropského zatýkacího rozkazu.</p>
           <a href="https://patranie.sk/?p=33096" target="_blank" rel="noopener noreferrer">Patranie.sk stopa</a>
           <a href="https://e-justice.europa.eu/topics/court-procedures/criminal-cases/judicial-cooperation/european-arrest-warrant_cs" target="_blank" rel="noopener noreferrer">EAW vysvětlení EU</a>
+          <a href="https://www.slov-lex.sk/tezaury/terminy/35b2a079-03a6-45ae-a647-eff83f9dca46" target="_blank" rel="noopener noreferrer">Slov-Lex: príkaz na zatknutie</a>
+          <a href="https://www.minv.sk/?patranie-po-osobach=" target="_blank" rel="noopener noreferrer">MV SR: pátranie po osobách</a>
+        </article>
+        <article>
+          <span class="badge official">postup pro poškozené</span>
+          <h3>Policie ČR a bezpečné oznámení</h3>
+          <p>Obecné pokyny pro trestní oznámení a hlášení internetových podvodů.</p>
+          <a href="https://policie.gov.cz/clanek/oznameni-trestneho-cinu.aspx" target="_blank" rel="noopener noreferrer">Oznámení trestného činu</a>
+          <a href="https://policie.gov.cz/clanek/or-melnik-zpravodajstvi-objednane-zbozi-nedorazilo.aspx" target="_blank" rel="noopener noreferrer">Objednané zboží nedorazilo</a>
+          <a href="https://policie.gov.cz/clanek/or-melnik-zpravodajstvi-podvody-na-internetu.aspx" target="_blank" rel="noopener noreferrer">Podvody na internetu</a>
         </article>
         <article>
           <span class="badge public">veřejné úryvky</span>
