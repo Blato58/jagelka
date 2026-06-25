@@ -1,0 +1,25 @@
+# OS/editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+
+# Local runtime/cache output
+node_modules/
+.cache/
+dist/
+build/
+coverage/
+
+# Logs and temp files
+*.log
+*.tmp
+*.temp
+
+# Private source export and raw media; publish redacted assets/archive instead.
+result.json
+photos/
+video_files/
+voice_messages/
+stickers/
