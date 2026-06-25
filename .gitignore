@@ -19,6 +19,7 @@ coverage/
 
 # Private source export and raw media; publish redacted assets/archive instead.
 result.json
+assets/jagelka-profile-redacted.jpg
 photos/
 video_files/
 voice_messages/

@@ -1,16 +1,22 @@
+param(
+    [string]$SourcePath
+)
+
 Add-Type -AssemblyName System.Drawing
 
 $ErrorActionPreference = "Stop"
 
 $root = Split-Path -Parent $PSScriptRoot
-$sourcePath = Join-Path $root "assets\jagelka-profile-redacted.jpg"
+if ([string]::IsNullOrWhiteSpace($SourcePath)) {
+    $SourcePath = Join-Path $root "assets\jagelka-profile-redacted.jpg"
+}
 $outPath = Join-Path $root "assets\jagelka-profile-neutral.jpg"
 
-if (-not (Test-Path -LiteralPath $sourcePath)) {
-    throw "Source image not found: $sourcePath"
+if (-not (Test-Path -LiteralPath $SourcePath)) {
+    throw "Source image not found: $SourcePath. Keep the source ID image local and untracked, then pass it with -SourcePath if needed."
 }
 
-$source = [System.Drawing.Image]::FromFile($sourcePath)
+$source = [System.Drawing.Image]::FromFile($SourcePath)
 $size = 800
 $bitmap = [System.Drawing.Bitmap]::new($size, $size)
 $graphics = [System.Drawing.Graphics]::FromImage($bitmap)
