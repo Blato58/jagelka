@@ -32,7 +32,7 @@ jobs:
           set -euo pipefail
 
           mkdir -p public
-          cp index.html archive.html styles.css public/
+          cp index.html archive.html styles.css robots.txt sitemap.xml public/
           cp -R assets public/assets
           touch public/.nojekyll
 
