@@ -1,0 +1,65 @@
+name: Deploy website
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: active24-deploy
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    name: Upload static site to Active24
+    runs-on: ubuntu-latest
+
+    env:
+      ACTIVE24_HOST: 37.9.175.212
+      ACTIVE24_PROTOCOL: ${{ vars.ACTIVE24_PROTOCOL || 'sftp' }}
+      ACTIVE24_PORT: ${{ vars.ACTIVE24_PORT || '22' }}
+      ACTIVE24_REMOTE_DIR: ${{ vars.ACTIVE24_REMOTE_DIR || '/www' }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Prepare public files
+        run: |
+          set -euo pipefail
+
+          mkdir -p public
+          cp index.html archive.html styles.css public/
+          cp -R assets public/assets
+
+      - name: Install lftp
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes lftp
+
+      - name: Deploy over FTP/SFTP
+        env:
+          ACTIVE24_USERNAME: ${{ secrets.ACTIVE24_FTP_USERNAME }}
+          ACTIVE24_PASSWORD: ${{ secrets.ACTIVE24_FTP_PASSWORD }}
+        run: |
+          set -euo pipefail
+
+          if [ -z "${ACTIVE24_USERNAME}" ] || [ -z "${ACTIVE24_PASSWORD}" ]; then
+            echo "Missing ACTIVE24_FTP_USERNAME or ACTIVE24_FTP_PASSWORD secret." >&2
+            exit 1
+          fi
+
+          case "${ACTIVE24_PROTOCOL}" in
+            ftp|sftp) ;;
+            *)
+              echo "ACTIVE24_PROTOCOL must be ftp or sftp." >&2
+              exit 1
+              ;;
+          esac
+
+          lftp -u "${ACTIVE24_USERNAME},${ACTIVE24_PASSWORD}" "${ACTIVE24_PROTOCOL}://${ACTIVE24_HOST}:${ACTIVE24_PORT}" <<EOF
+          set sftp:auto-confirm yes
+          mirror --reverse --verbose public/ "${ACTIVE24_REMOTE_DIR}"
+          bye
+          EOF
