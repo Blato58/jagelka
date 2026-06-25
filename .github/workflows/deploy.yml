@@ -19,7 +19,7 @@ jobs:
       ACTIVE24_HOST: 37.9.175.212
       ACTIVE24_PROTOCOL: ${{ vars.ACTIVE24_PROTOCOL || 'sftp' }}
       ACTIVE24_PORT: ${{ vars.ACTIVE24_PORT || '22' }}
-      ACTIVE24_REMOTE_DIR: ${{ vars.ACTIVE24_REMOTE_DIR || '/www' }}
+      ACTIVE24_REMOTE_DIR: ${{ vars.ACTIVE24_REMOTE_DIR || '/jagelka.cz/web' }}
 
     steps:
       - name: Checkout
