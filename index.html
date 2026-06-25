@@ -15,7 +15,9 @@
             name="robots"
             content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"
         />
+        <meta name="author" content="Vojtech Petrik" />
         <link rel="canonical" href="https://jagelka.cz/" />
+        <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="cs_CZ" />
         <meta property="og:site_name" content="Varování: František Jagelka" />
@@ -36,6 +38,10 @@
             property="og:image:alt"
             content="Redigovaná profilová fotografie osoby označované jako František Jagelka"
         />
+        <meta property="og:image:width" content="613" />
+        <meta property="og:image:height" content="960" />
+        <meta property="og:updated_time" content="2026-06-25T16:30:00+02:00" />
+        <meta property="article:modified_time" content="2026-06-25T16:30:00+02:00" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
             name="twitter:title"
@@ -64,15 +70,55 @@
                 "@context": "https://schema.org",
                 "@graph": [
                     {
+                        "@type": "WebSite",
+                        "@id": "https://jagelka.cz/#website",
+                        "url": "https://jagelka.cz/",
+                        "name": "Varování: František Jagelka",
+                        "alternateName": "František Jagelka - varování pro poškozené",
+                        "inLanguage": "cs"
+                    },
+                    {
+                        "@type": "BreadcrumbList",
+                        "@id": "https://jagelka.cz/#breadcrumb",
+                        "itemListElement": [
+                            {
+                                "@type": "ListItem",
+                                "position": 1,
+                                "name": "Varování",
+                                "item": "https://jagelka.cz/"
+                            }
+                        ]
+                    },
+                    {
                         "@type": "WebPage",
                         "@id": "https://jagelka.cz/#webpage",
                         "url": "https://jagelka.cz/",
                         "name": "František Jagelka: varování před hlášenými podvody",
+                        "isPartOf": {
+                            "@id": "https://jagelka.cz/#website"
+                        },
+                        "breadcrumb": {
+                            "@id": "https://jagelka.cz/#breadcrumb"
+                        },
                         "inLanguage": "cs",
+                        "datePublished": "2026-06-25",
+                        "dateModified": "2026-06-25T16:30:00+02:00",
                         "description": "Harm-reduction varování se zdroji, timeline a bezpečnými kroky pro lidi, kteří řeší hlášené podvody spojované se jménem František Jagelka.",
+                        "about": [
+                            {
+                                "@type": "Thing",
+                                "name": "František Jagelka"
+                            },
+                            {
+                                "@type": "Thing",
+                                "name": "hlášené podvody a falešné platby"
+                            }
+                        ],
                         "primaryImageOfPage": {
                             "@type": "ImageObject",
                             "url": "https://jagelka.cz/assets/jagelka-profile-redacted.jpg",
+                            "width": 613,
+                            "height": 960,
                             "caption": "Redigovaná profilová fotografie"
                         }
                     },
@@ -196,6 +242,11 @@
                         <img
                             src="assets/jagelka-profile-redacted.jpg"
                             alt="Redigovaná profilová fotografie osoby označované jako František Jagelka"
+                            width="613"
+                            height="960"
+                            loading="eager"
+                            decoding="async"
+                            fetchpriority="high"
                         />
                         <div class="person-caption">
                             <strong>Redigovaná portrétní fotografie</strong>
@@ -368,7 +419,7 @@
                             adrese:
                         </p>
                         <p class="contact-line">
-                            podvodnik.jagelka@hexus.eu
+                            podvodnik.jagelka [zavináč] hexus.eu
                         </p>
                         <p>
                             Verím, že spoločným postupom sa nám podarí tento
@@ -822,6 +873,10 @@
                     <img
                         src="assets/jagelka-warrant-redacted.jpg"
                         alt="Redigovaný screenshot pátrání s textem Príkaz na zatknutie"
+                        width="610"
+                        height="1012"
+                        loading="lazy"
+                        decoding="async"
                     />
                     <figcaption>
                         Redigovaná verze: ponechán důvod pátrání, datum
@@ -1324,7 +1379,7 @@
                             rel="noopener noreferrer"
                             >Instagram @vojta.petrik58</a
                         >
-                        · blato.smurf@gmail.com
+                        · blato.smurf [zavináč] gmail.com
                     </p>
                 </div>
             </div>

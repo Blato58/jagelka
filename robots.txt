@@ -1,4 +1,12 @@
 User-agent: *
 Allow: /
+Disallow: /result.json
+Disallow: /sources.txt
+Disallow: /photos/
+Disallow: /video_files/
+Disallow: /voice_messages/
+Disallow: /stickers/
+Disallow: /tools/
+Disallow: /social/
 
 Sitemap: https://jagelka.cz/sitemap.xml
