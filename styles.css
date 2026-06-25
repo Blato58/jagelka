@@ -356,6 +356,7 @@ p {
 }
 
 .identity-card,
+.announcement,
 .cards article,
 .evidence-grid article,
 .impact-grid div,
@@ -377,6 +378,7 @@ p {
 }
 
 .identity-card li,
+.announcement-body p,
 .cards p,
 .evidence-grid p,
 .impact-grid p,
@@ -390,6 +392,45 @@ p {
 
 .source-line {
   margin-top: 16px;
+}
+
+.next-steps {
+  background: #fff;
+  max-width: none;
+  padding-left: max(24px, calc((100vw - 1200px) / 2 + 24px));
+  padding-right: max(24px, calc((100vw - 1200px) / 2 + 24px));
+}
+
+.announcement {
+  border-left: 6px solid var(--danger);
+  max-width: 920px;
+}
+
+.announcement-meta {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  margin-bottom: 16px;
+}
+
+.announcement-meta .badge {
+  margin: 0;
+}
+
+.announcement-body {
+  display: grid;
+  gap: 12px;
+}
+
+.contact-line {
+  background: var(--danger-soft);
+  border: 1px solid rgba(177, 18, 27, 0.18);
+  border-radius: 6px;
+  color: var(--danger-dark) !important;
+  display: inline-block;
+  font-weight: 900;
+  padding: 10px 12px;
 }
 
 .cards,
