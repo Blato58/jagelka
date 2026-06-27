@@ -34,6 +34,7 @@ jobs:
           mkdir -p public/assets
           cp index.html archive.html styles.css robots.txt sitemap.xml public/
           cp assets/jagelka-profile-neutral.jpg assets/jagelka-warrant-redacted.jpg public/assets/
+          cp assets/police-confrontation.mp4 assets/payment-promise-audio.mp4 public/assets/
           touch public/.nojekyll
 
       - name: Upload Pages artifact

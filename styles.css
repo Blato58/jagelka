@@ -492,6 +492,7 @@ p {
 .limits-grid article,
 .action-grid article,
 .checklist-grid article,
+.media-card,
 .source-list article {
   background: var(--panel);
   border: 1px solid var(--line);
@@ -515,6 +516,7 @@ p {
 .limits-grid p,
 .action-grid p,
 .checklist-grid p,
+.media-card p,
 .source-list p,
 .timeline p {
   color: var(--muted);
@@ -594,6 +596,53 @@ p {
   max-width: none;
   padding-left: max(24px, calc((100vw - 1200px) / 2 + 24px));
   padding-right: max(24px, calc((100vw - 1200px) / 2 + 24px));
+}
+
+.media-evidence {
+  background: #fff;
+  max-width: none;
+  padding-left: max(24px, calc((100vw - 1200px) / 2 + 24px));
+  padding-right: max(24px, calc((100vw - 1200px) / 2 + 24px));
+}
+
+.media-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+}
+
+.media-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.media-card-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.media-card-header .badge {
+  margin: 0;
+}
+
+.media-card video,
+.media-card audio {
+  background: var(--black);
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+}
+
+.media-card video {
+  aspect-ratio: 9 / 16;
+  max-height: 720px;
+  object-fit: contain;
+}
+
+.media-card audio {
+  margin-top: auto;
 }
 
 .verified-overview {
@@ -951,6 +1000,7 @@ p {
   .limits-grid,
   .action-grid,
   .checklist-grid,
+  .media-grid,
   .source-list,
   .faq-list,
   .footer-grid,
